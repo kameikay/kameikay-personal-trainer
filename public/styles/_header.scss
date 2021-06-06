@@ -1,0 +1,141 @@
+header {
+    height: 60px;
+    font-size: 1.25rem;
+    background-color: $dark;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    
+    nav {
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        
+        @media screen and (max-width: 1024px) {
+            padding: 0 30px;
+            
+        }
+
+        .logo {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        .hamburger {
+            display: none;
+
+            @media screen and (max-width:1024px) {
+                display: block;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+
+                span {
+                        width: 30px;
+                        height: 3px;
+                        background-color: $white;
+                        margin-top: 5px;
+                        transform-origin: 9px 2px;
+                        transition: 400ms ease-in-out;
+                }
+            }
+        }
+
+        .menu-bar{
+            
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+            ul {
+                display: flex;
+
+                :not(:last-child) {
+                    padding-right: 60px;
+                }
+
+                li {
+
+                    :visited {
+                        color: $white;
+                    }
+
+                    :hover {
+                        margin-top: 6px;
+                        transition: border 500ms ease-in-out;
+                        border-bottom: 3px solid $red;
+                       
+                    }
+
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.overlay {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient($dark, transparent);
+    overflow: hidden;
+    z-index: 9;
+}
+
+.menu{
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+
+    &__open {
+        z-index: 10;
+        background-color: $dark;
+        position: absolute;
+        
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+            cursor: pointer;
+            color: $white;
+
+            :visited {
+                color: $white;
+            }
+
+            a {
+                color: $white;
+
+                &:hover {
+                    margin-top: 6px;
+                    transition: border 500ms ease-in-out;
+                    border-bottom: 3px solid $red;
+                }  
+            }
+
+        }
+    }
+
+}

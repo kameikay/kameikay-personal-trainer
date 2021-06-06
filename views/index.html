@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../public/styles/style.css">
+
+    <title>Kamei Kay - Assessoria Esportiva</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../public/images/image-logo-no-bg.png" alt="LOGO">
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#hero">HOME</a></li>
+                    <li><a href="#planos">QUERO SER ALUNO</a></li>
+                    <li><a href="#quem-somos">QUEM SOMOS</a></li>
+                    <li><a href="#">ALUNOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu hidden has-fade"> <!-- fazer um opacity dinâmico -->
+        <ul class="menu__open">
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#planos">QUERO SER ALUNO</a></li>
+            <li><a href="#quem-somos">QUEM SOMOS</a></li>
+            <li><a href="#">ALUNOS</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero" id="hero"> <!-- fazer um carousel -->
+            <div class="typing">
+                <span>TREINAMENTOS PARA </span>
+                <span class="type">SUA VIDA MUDAR</span>
+            </div>
+        </section>
+
+        <section class="planos" id="planos"> <!-- ver de fazer um hover nos planos-->
+            <div class="planos__geral">
+                <p>SÃO VÁRIOS PLANOS, MAS APENAS UM RESULTADO.</p>
+                <p>ESCOLHA O QUE MELHOR SE ENCAIXA COM SUA REALIDADE E COMECE SUA MUDANÇA</p>
+            </div>
+
+            <div class="planos__container">
+                <div class="plano">
+                    <div class="title">
+                        <h2>ASSESSORIA ESPECIALIZADA</h2>
+                    </div>
+
+                    <div class="text">
+                        <p>Planilha de corridas e/ou treinamentos específicos</p>
+                        <p>Adaptado à sua rotina</p>
+                        <p>Dúvidas respondidas em até 24h</p>
+                        <p>Especial para Testes de Aptidão Física (<strong>TAF</strong>):</p>
+                        <p>- Corrida</p>
+                        <p>- Barra</p>
+                        <p>- Shuttle Run</p>
+                    </div>
+
+                    <div class="online">
+                        <h2>100% online</h2>
+                    </div>
+
+                    <div class="valor">
+                        <small>R$</small><big id="valor-especializada">129,90</big>/<span class="periodo-especializada">MÊS</span>
+                    </div>
+
+                    <select name="select-plano" id="select-plano-especializada">
+                        <option value="mensal">MENSAL</option>
+                        <option value="semestral">SEMESTRAL</option>
+                        <option value="anual">ANUAL</option>
+                    </select>
+
+                    <button><a href="../views/cadastro.html">QUERO SER ALUNO</a></button>
+                </div>
+
+                <div class="plano">
+                    <div class="title">
+                        <h2>ASSESSORIA ONLINE</h2>
+                    </div>
+
+                    <div class="text">
+                        <p>Planilha de treinamentos</p>
+                        <p>Adaptado à sua rotina</p>
+                        <p>Dúvidas respondidas em até 24h</p>
+                        <p>Planilhas individualizadas</p>
+                        <p>Peridiodização de treinos</p>
+                    </div>
+
+                    <div class="online">
+                        <h2>100% online</h2>
+                    </div>
+
+                    <div class="valor">
+                        <small>R$</small><big id="valor-online">159,90</big>/<span class="periodo-online">MÊS</span>
+                    </div>
+
+                    <select name="select-plano" id="select-plano-online">
+                        <option value="mensal">MENSAL</option>
+                        <option value="semestral">SEMESTRAL</option>
+                        <option value="anual">ANUAL</option>
+                    </select>
+
+                    <button><a href="../views/cadastro.html">QUERO SER ALUNO</a></button>
+                </div>
+
+                <div class="plano">
+                    <div class="title">
+                        <h2>PERSONAL PRESENCIAL</h2>
+                    </div>
+
+                    <div class="text">
+                        <p>Planilha de treinamentos focado no seu <strong>OBJETIVO</strong></p>
+                        <p>- Hipertrofia</p>
+                        <p>- Fortalecimento</p>
+                        <p>- Emagrecimento</p>
+                        <p>Planilhas adaptadas à sua rotina</p>
+                        <p>Dúvidas respondidas em até 24h</p>
+                        <p>Treinamentos presenciais para região de <strong>Curitiba - PR</strong></p>
+                    </div>
+
+                    <div class="online">
+                        <h2></h2>
+                    </div>
+
+                    <div class="valor">
+                        <small>R$</small><big id="valor-presencial">299,90</big>/<span class="periodo-presencial">MÊS</span>
+                    </div>
+
+                    <select name="select-plano" id="select-plano-presencial">
+                        <option value="mensal">MENSAL</option>
+                        <option value="semestral">SEMESTRAL</option>
+                        <option value="anual">ANUAL</option>
+                    </select>
+
+                    <button><a href="../views/cadastro.html">QUERO SER ALUNO</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quem-somos" id="quem-somos">
+            <div class="quem-somos__container">
+                <div class="quem-somos__apresentacao">
+                    <div class="name">
+                        <h2>FELIPE S. KAMEI KAY</h2>
+                        <small>Bacharel em Ed. Física - CREF 123123/PR</small>
+                    </div>
+                    <div class="description">
+                        <p>Olá! Meu nome é Felipe Shinji Kamei Kay,
+                            sou bacharel em Educação Física, pela
+                            Universidade Positivo, especialista em
+                            musculação e hipertrofia, especialista em
+                            corrida e possuo mais de 100 alunos
+                            entre assessoria online e presencial.</p>
+                            
+                        <p>Meu objetivo é fazer você alcançar seu objetivo de forma saudável e consciente!</p>
+                            
+                        <p>Tenho certeza que podemos fazer um ótimo trabalho juntos!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Kamei Kay - Personal Trainer - 2021
+        </p>
+        <p>
+            Todos os direitos reservados. &copy;
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../public/scripts/header.js"></script>
+    <script src="../public/scripts/hero.js"></script>
+
+    <script src="../public/scripts/planos.js"></script>
+
+</body>
+</html>

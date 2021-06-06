@@ -1,0 +1,88 @@
+.planos {
+    width: 100%;
+
+    @media screen and(min-width: 1035px) {
+        background-image: url('../images/background-blackwhite-op30.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    background-color: $light-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__geral {
+        background-color: $grey;
+        width: 100%;
+        text-align: center;
+
+        p {
+            padding-top: 10px;
+            color: $white;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .plano {
+            background-color: $white;
+            width: 300px;
+            margin: 70px 22.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .title {
+                background-color: $red;
+                height: 150px;
+                text-align: center;
+                color: $white;
+                font-size: 1.60rem;
+                line-height: 75px;
+            }
+
+            .text {
+                height: 432px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+
+                :not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
+
+            .online {
+                height: 35px;
+            }
+
+            select[name="select-plano"] {
+                width: 260px;
+            }
+
+            button {
+                margin: 27px;
+                font-size: 1.60rem;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: $dark-red;
+            }   
+        }
+    }
+    
+}
+
+big {
+    font-size: 2.2rem;
+
+}
