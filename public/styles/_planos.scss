@@ -72,6 +72,10 @@
                 margin: 27px;
                 font-size: 1.60rem;
                 cursor: pointer;
+
+                a {
+                    color: $white;
+                }
             }
 
             button:hover{

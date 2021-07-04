@@ -7,6 +7,7 @@ const menuUl = document.querySelector('.menu__open')
 const menuUlItems = document.querySelectorAll('.menu__open li a')
 const body = document.querySelector('body')
 
+// Menu hamburger
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open')
     menuVertical.classList.toggle('hidden')

@@ -35,6 +35,15 @@
                 align-items: center;
                 justify-content: center;
                 height: 150px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    background-color: $red;
+                    margin-top: 1rem;
+                }
             }
 
             .description {
